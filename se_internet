@@ -1,0 +1,16 @@
+#!/usr/bin/env wish
+
+button .browser -text "Browser" -command { exec firefox &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .imclient -text "Instant Messaging" -command { exec kopete &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .email -text "Email" -command { exec kmail &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .news -text "Random News" -command { exec akregator &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .dialup -text "Connect to Internet" -command { exec kppp &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .back -text "Back" -command { exit; } -foreground black -background green -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+grid .browser .imclient .email
+grid .news .dialup .back

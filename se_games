@@ -1,0 +1,25 @@
+#!/usr/bin/env wish
+
+button .doom -text "Doom" -command { exec se_launchdoom &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .pzbu -text "Puzzle Bobble" -command { exec frozen-bubble &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .civ -text "Civilisation" -command { exec civclient &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+
+button .wesnoth -text "The Battle For Wesnoth" -command { exec wesnoth &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .bomberman -text "Bomberman" -command { exec clanbomber &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .tetris -text "Tetris" -command { exec ltris &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+
+button .breakout -text "Breakout" -command { exec lbreakout &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .tabletennis -text "Table Tennis" -command { exec csmash &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .back -text "Back" -command { exit; } -foreground black -background green -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+grid .doom .pzbu .civ
+grid .wesnoth .bomberman .tetris
+grid .breakout .tabletennis .back

@@ -1,0 +1,16 @@
+#!/usr/bin/env wish
+
+button .browser -text "Browser" -command { exec konqueror &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .writer -text "Writer" -command { exec openoffice.org-2.1 -writer &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .spreadsheets -text "Spreadsheets" -command { exec openoffice.org-2.1 -calc &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .presentations -text "Presentations" -command { exec openoffice.org-2.1 -impress &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .databases -text "Databases" -command { exec openoffice.org-2.1 -base &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .back -text "Back" -command { exit; } -foreground black -background green -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+grid .browser .writer .spreadsheets
+grid .presentations .databases .back

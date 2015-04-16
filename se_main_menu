@@ -1,0 +1,16 @@
+#!/usr/bin/env wish
+
+button .settings -text "Settings" -command { exec ./se_settings &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .internet -text "Internet" -command { exec ./se_internet &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .work -text "Work" -command { exec ./se_work &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .games -text "Games" -command { exec ./se_games &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .media -text "Media" -command { exec ./se_media &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .se -text "Silent Echoes" -command { exec ./se_se &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+grid .settings .internet .work
+grid .games .media .se

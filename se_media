@@ -1,0 +1,35 @@
+#!/usr/bin/env wish
+
+
+button .movie -text "Movie Player" -command { exec kmplayer &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .tv -text "TV Viewer" -command { exec kdetv &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .videoedit -text "Video Editing" -command { exec kino &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+
+
+button .music -text "Music Player" -command { exec amarok &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .audioedit -text "Audio Editor" -command { exec audacity &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .cdrip -text "CD Ripping" -command { exec kaudiocreator &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+
+button .image -text "Image Editor" -command { exec gimp &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .vector -text "Vector Graphics" -command { exec inkscape &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .draw -text "Drawing" -command { exec openoffice.org-2.1 -draw &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+
+button .3dmodel -text "3D Modeller" -command { exec blender &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .scanning -text "Scanning" -command { exec kooka &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .back -text "Back" -command { exit; } -foreground black -background green -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+grid .movie .tv .videoedit
+grid .music .audioedit .cdrip
+grid .image .vector .draw
+grid .3dmodel .scanning .back

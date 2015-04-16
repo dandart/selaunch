@@ -1,0 +1,13 @@
+#!/usr/bin/env wish
+
+button .website -text "Web Site" -command { exec firefox www.silentechoesmedia.com &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .update -text "Update SEOS" -command { exec firefox www.silentechoesmedia.com/update &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+button .feedback -text "Feedback" -command { exec firefox www.silentechoesmedia.com/feedback &; } -foreground black -background red -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+
+button .back -text "Back" -command { exit; } -foreground black -background green -activeforeground black -activebackground blue -relief raised -overrelief sunken -height 8 -width 24
+
+grid .website .update .feedback
+grid .back
